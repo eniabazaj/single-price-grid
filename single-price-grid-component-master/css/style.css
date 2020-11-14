@@ -1,0 +1,132 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  background-color: var(--light-gray);
+  font-size: 14px;
+  font-family: 'Karla', sans-serif;
+  color: var(--grayish-blue);
+}
+
+/* CONTAINER */
+.container {
+  border-radius: 10px;
+  display: grid;
+  width: 560px;
+  overflow: hidden;
+  box-shadow: 0 5px 16px #cbdcec;
+  margin: auto;
+  margin-top: 50px;
+  grid-template-columns: repeat(2, 280px);
+  grid-template-rows: 200px 220px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: block;
+    max-width: 90%;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+}
+
+/* BOX 1 */
+#box1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 25px 30px;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cyan);
+  padding-bottom: 5px;
+}
+
+.under-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bright-yellow);
+  padding-bottom: 2px;
+}
+
+/* BOX 2 */
+#box2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 25px 30px;
+  background-color: var(--cyan);
+}
+
+.category-title {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+
+.dollar {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.dollar-text {
+  color: #80cdcc;
+}
+
+.box-text {
+  color: #fff;
+}
+
+.button {
+  box-shadow: 0px 5px 8px -4px #25a3a1;
+  background-color: #bee034;
+  border-radius: 5px;
+  border: 1px solid #bee034;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 80px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #bee034;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* BOX 3 */
+#box3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 25px 30px;
+  background-color: #4abebd;
+}
+
+.list {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 0.5;
+}
+
+/* FOOTER */
+.attribution {
+  text-align: center;
+  margin-top: 30px;
+}
